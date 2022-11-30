@@ -1,0 +1,230 @@
+.navbar 
+{
+    width: 100%;
+    overflow: auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    padding:1%  ;
+    font-size:5vw ;
+    text-decoration: none;
+    position: sticky;
+}
+
+
+ @media screen and (max-width: 500px) 
+{
+    .navbar
+    {
+      float: none;
+      display:block;
+    }
+}
+
+
+#b1,#b2, #b3, #b4, #b5
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 60px;
+    font-family:monospace  ;
+    font-weight: bold;  
+    border:none ;
+    width:180px;
+    text-decoration:none;
+    padding: 10px;
+    text-align: center;
+    border-radius:10px ;
+    margin:7px ;
+}
+
+
+#b1:hover,#b2:hover,#b3:hover, #b5:hover
+{
+    background-color: rgb(119, 150, 185);
+    text-decoration: none;
+}
+
+
+.bar
+{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+.td1
+  {
+    width: 350px;
+    height: 200px; 
+    text-align: center; 
+    font-family: 'Courier New', Courier, monospace; 
+    color: rgb(20, 41, 50);
+    font-weight: bold;
+    font-size: 20px ;
+    padding:15px ;
+  }
+
+
+.td1:hover
+{
+    font-size: 120% ;
+}
+  
+  #t1
+  {
+      background-color: rgb(218, 218, 218);
+      display: inline-block;
+      padding:10px;
+      margin-top: 50px;
+  }
+ 
+
+#header
+{
+    margin-top: 80px ;
+}
+
+
+.img2
+{
+  height: 50px;
+  text-align: center;
+  filter: invert();
+  
+}
+
+
+html, body 
+{
+    height: 100vh;
+    background: #ffffff;
+    font-family:'Courier New', Courier, monospace;
+}
+  
+  
+.contactsheet 
+{
+    width: 47%;
+    padding: 30px 90px 90px 90px;
+    padding-top: 60px;
+    border: 6px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    position: relative;
+    margin-top: 100px;
+}
+
+  
+#head
+{
+    color: rgba(0, 0, 0, 0.71);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+ 
+
+.contactsheet .row 
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid: auto / auto auto;
+    grid-template-columns: repeat();
+    grid-gap: 30px;
+}
+  
+
+.contactsheet .row .col 
+{
+    position: relative;
+    width: 100%;
+    margin: 30px 20px 40px 0;
+}
+  
+
+.contactsheet .row .form 
+{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #000000;
+}
+  
+.contactsheet .row .form input,
+.contactsheet .row .form textarea 
+  {
+    
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 24px;
+    padding: 10px 0 10px 20px;
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+    color: #000000;
+    border-radius: 50px;
+  }
+  
+  .contactsheet .row .form label {
+    line-height: 40px;
+    color: #000000;
+    font-size: 24px;
+    margin: 0 0 0 30px;
+    display: block;
+    
+  }
+  
+  .row .col:nth-child(6) {
+    margin-top: 64px;
+  }
+  
+  
+  
+  .contactsheet .row input[type="submit"] 
+  {
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    text-transform: uppercase;
+    color: #00000083;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 45px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  
+  
+  @media screen and (max-width: 900px) 
+  {
+    .contactsheet .row {
+      grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
+    }
+    
+    .contactsheet {
+      padding: 20px;
+    }
+    
+    #head {
+      font-size: 34px;
+    }
+    
+    .contactsheet .row input[type="submit"] {
+      width: 100%;
+    }
+  }
+
+  .col input[type="submit"]:hover 
+  {
+    color: #000000;
+  }

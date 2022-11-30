@@ -1,0 +1,244 @@
+.navbar 
+{
+    width: 100%;
+    overflow: auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    padding:1%  ;
+    font-size:5vw ;
+    text-decoration: none;
+    position: sticky;
+}
+  
+
+@media screen and (max-width: 500px) 
+{
+    .navbar
+    {
+      float: none;
+      display:block;
+    }
+}
+
+
+#b1,#b2, #b3, #b4, #b5
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 60px;
+    font-family:monospace  ;
+    font-weight: bold;  
+    border:none ;
+    width:180px;
+    text-decoration:none;
+    padding: 10px;
+    text-align: center;
+    border-radius:10px ;
+    margin:7px ;
+}
+
+
+#b1:hover,#b3:hover,#b4:hover,#b5:hover
+{
+    background-color: rgb(119, 150, 185);
+    text-decoration: none;
+}
+
+
+.bar
+{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.td1
+{
+      width: 350px;
+      height: 200px; 
+      text-align: center; 
+      font-family: 'Courier New', Courier, monospace; 
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      font-size: 20px ;
+      padding:15px ;
+}
+
+  
+#t1
+{
+      background-color: rgb(255, 255, 255);
+      display: inline-block;
+      padding:30px;
+}
+
+#div1
+{
+  background-color: rgb(218, 218, 218);
+  padding: 20px;
+  margin-top: 50px ;
+}
+
+#t1
+{
+      background-color: rgb(255, 255, 255);
+      display: inline-block;
+      padding:30px;
+}
+
+
+#intro1
+{
+    font-family: monospace;
+    font-size: 30px;
+    color: rgb(6, 39, 67);;
+    font-weight: bold;
+    text-align: center;
+    text-align: center;
+}
+
+
+.img2
+{
+      height: 50px;
+      text-align: center;
+      
+}
+
+#introp
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 100px;
+
+    border-style: solid ;
+    margin-top:100px ;
+
+}
+
+
+#header
+{
+    
+    padding-top: 60px ;
+    font-size: 30PX;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 40px ;
+}
+
+#gall
+{
+    
+    padding-bottom: 20px ;
+    padding-top:40px ;
+    font-size: 20PX;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#div2
+{
+  background-color: rgb(218, 218, 218);;
+  padding: 20px;
+  margin-top: 50px ;
+}
+
+#rstones
+{
+    width:700px ;
+    text-decoration: none;
+}
+
+#lupin
+{
+   width:700px ;
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: rgb(255, 255, 255);
+  }
+
+  .rflipcard {
+    background-color: transparent;
+    width: 700px;
+    height: 700px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+
+  .finner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition:0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  
+  .rflipcard:hover .finner 
+  {
+    transform: rotateY(180deg);
+  }
+  
+ 
+  .ffront, .fback 
+  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  
+  .fback {
+    transform: rotateY(180deg);
+  }
+
+.column {
+    float:center;
+    width: 50%;
+    padding: 5px;
+  }
+  
+ 
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #glink
+  {
+    color: black;
+
+  }
+
+  #glink:hover
+  {
+   
+    font-size: 150% ;
+    
+  }
+  
+  @media (max-width: 1200px) {
+    .row {
+          width: 0px;
+    }
+ }
+
+ @media (max-width: 1000px) {
+    #imggallery 
+    {
+     width: 20px;
+    }
+ }
+
+
+
+ 
+  
