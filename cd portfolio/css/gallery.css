@@ -21,6 +21,26 @@
     }
 }
 
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  padding: 2%;
+}
+
+#foot
+{
+  text-decoration: none;
+  color: aliceblue;
+}
+      
+#foot:hover{
+  font-size: 22px;
+}
+
+
 
 #b1,#b2, #b3, #b4,#b5
 {
