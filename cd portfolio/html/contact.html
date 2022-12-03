@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/cd portfolio/css/contact.css">
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script defer src="/cd portfolio/javascript/sketch.js"></script>
 </head>
 <body>
    
@@ -69,48 +73,52 @@
     
 
 <center>
-    <form action="">
+    <form action="#" id="form" name="form1">
 
 <div class="contactsheet">
     <h2 id="head">LEAVE ME A NOTE!</h2>
     <div class="row">
       <div class="col">
         <div class="form">
-          <label>FIRST NAME</label>
-          <input type="text">
+          <label for="nameA">FIRST NAME</label>
+          <input type="text" id="nameA" name="name1" placeholder="YOUR FIRST NAME">
         </div>
       </div>
   
       <div class="col">
         <div class="form">
-          <label>SURNAME</label>
-          <input type="text">
+          <label for="nameA">SURNAME</label>
+          <input type="text" id="nameA" name="name1" placeholder="YOUR SURNAME">
         </div>
       </div>
   
       <div class="col">
         <div class="form">
-          <label>EMAIL</label>
-          <input type="text">
+          <label for="email">EMAIL</label>
+          <input type="text" name="mail1" id="email" placeholder="EMAIL ADDRESS" id="email" name="email">
         </div>
       </div>
   
       <div class="col">
         <div class="form">
-          <label>PHONE NUMBER</label>
-          <input type="text">
+          <label for="phone">PHONE NUMBER</label>
+          <input type="text" placeholder="PHONE NUMBER" name="phone1" id="phone">
         </div>
       </div>
   
       <div class="col">
         <div class="form">
           <label>TELL ME!</label>
-          <textarea></textarea>
+          <textarea placeholder="YOUR MESSAGE" name="subject"
+          id="subject"></textarea>
         </div>
       </div>
   
       <div class="col">
-        <input type="submit" value="Submit">
+        
+      <input type="submit" id="submitBtn"
+                        onclick="ValidateForm(document.form1.mail1, document.form1.phone1)"
+                        class="btn btn-outline-dark p-1 px-3 m-3 text-center">
       </div>
     </div>
   </div>
@@ -120,3 +128,10 @@
 <center>
     <H1 id="header">THANKS FOR VISITING!</H1> 
  </center>
+
+ <script>
+  AOS.init();
+</script>
+
+</body>
+</html>
